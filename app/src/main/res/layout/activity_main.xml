@@ -8,16 +8,29 @@
 
     <ImageView
         android:id="@+id/iv_dice"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:contentDescription="@string/no_of_faces"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:layout_marginBottom="16dp"
+        android:contentDescription="@string/no_of_faces"
         app:layout_constraintBottom_toTopOf="@id/tv_roll_dice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1"
         app:srcCompat="@drawable/dice1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_roll_dice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cornerRadius="8dp"
+        android:minHeight="?actionBarSize"
+        android:layout_margin="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Roll the Dice"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/tv_roll_dice"
